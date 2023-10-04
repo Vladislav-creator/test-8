@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-axios.defaults.baseURL = 'https://drinkify.b.goit.study/api/v1/';
+BASE_URL = 'https://drinkify.b.goit.study/api/v1/';
 END_POINT = `cocktails/search/?`
 
 
@@ -19,7 +19,7 @@ async function fetch_coctailsByName(query) {
   });
   try{
     const response = await axios(
-    `${END_POINT}${searchParams}`,
+    `${BASE_URL}${END_POINT}${searchParams}`,
   );
   return response.data; 
 } catch (error) {
