@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 BASE_URL = 'https://drinkify.b.goit.study/api/v1/';
-END_POINT = `cocktails/search/?`
+END_POINT = 'cocktails/search/?'
 
 
 axios.interceptors.response.use(
